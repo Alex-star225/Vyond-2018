@@ -72,11 +72,8 @@ module.exports = function (req, res, url) {
 			};
 			params = {
 				flashvars: {
-					'apiserver': '/', 'storePath': process.env.STORE_URL + '/<store>', 'ut': -1,
-					'autostart': 0, 'isWide': 0, 'clientThemePath': process.env.CLIENT_URL + '/<client_theme>',
-					'movieLid': '0', 'ctc': 'go', 'tlang': 'en_US', 'appCode': 'go', 'animationPath': process.env.SWF_URL + '/', 
-					'utm_source': null,'utm_medium': null,'s3base': '/movie_thumbs/', 'isEmbed': '0', 
-					'thumbnailURL': '/movie_thumbs/<movieId>.png', '
+					'apiserver': '/', 'storePath': process.env.STORE_URL + '/<store>', 'ut': 60,
+					'autostart': 1, 'isWide': 1, 'clientThemePath': process.env.CLIENT_URL + '/<client_theme>',
 				},
 				allowScriptAccess: 'always',
 			};

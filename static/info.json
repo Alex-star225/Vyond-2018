@@ -2,14 +2,21 @@
 	"GET": {
 		"/index.html": {
 			"headers": {
-				"Location": "/html/list.html"
+				"Location": "/yourvideos"
+			},
+			"statusCode": 302,
+			"content": ""
+		},
+		"/dashboard/videos": {
+			"headers": {
+				"Location": "/yourvideos"
 			},
 			"statusCode": 302,
 			"content": ""
 		},
 		"/$": {
 			"headers": {
-				"Location": "/html/list.html"
+				"Location": "/yourvideos"
 			},
 			"statusCode": 302,
 			"content": ""

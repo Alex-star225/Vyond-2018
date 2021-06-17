@@ -70,12 +70,25 @@ module.exports = function (req, res, url) {
 				data: process.env.SWF_URL + '/player.swf',
 				type: 'application/x-shockwave-flash', width: '100%', height: '100%',
 			};
-			params = {
-				flashvars: {
-					'apiserver': '/', 'storePath': process.env.STORE_URL + '/<store>', 'ut': 60,
-					'autostart': 1, 'isWide': 1, 'clientThemePath': process.env.CLIENT_URL + '/<client_theme>',
-				},
-				allowScriptAccess: 'always',
+	var player_data = {
+           id: "EmbedPlayer",
+           swf: process.env.SWF_URL + '/player.swf',
+           width: "100%",
+           height: "100%",
+
+           align: "middle",
+           allowScriptAccess: "always",
+           allowFullScreen: "true",
+           wmode: "transparent",
+
+           hasVersion: "10.3",
+           flashvars: {'movieOwner': '', 'movieOwnerId': '','movieId': '<movieId>', 'movieLid': '0', 'movieTitle': '',
+           'movieDesc': '', 'userId': '', 'username': '', 'uemail': '', 'ut': '-1', 'numContact': '', 'apiserver': '/', 'duration': '92', 'playcount': '0', 
+           'thumbnailURL': '/movie_thumbs/<movieId>.png', 'copyable': '', 'isPublished': '', 'ctc': 'go', 'tlang': 'en_US', 'is_private_shared': '', 'autostart': '0',
+           'appCode': 'go', 'is_slideshow': '', 'originalId': '', 'is_emessage': '', 'storePath': process.env.STORE_URL + '/<store>', 
+           'clientThemePath': process.env.CLIENT_URL + '/<client_theme>', 'animationPath': process.env.SWF_URL + '/', 'isEmbed': '1', 'refuser': null, 'utm_source':null,
+           'uid': null,'isTemplate': '', 'showButtons': '1', 'chain_mids': '', 'averageRating': '', 'ratingCount': '', 'fb_app_url': '/', 'ad': '', 'endStyle': '',
+	   'isWide':0,'pwm': '','s3base': '/movie_thumbs/"};
 			};
 			break;
 		}

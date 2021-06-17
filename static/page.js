@@ -110,7 +110,7 @@ module.exports = function (req, res, url) {
 	res.end(`
 	<head>
 		<script>
-			document.title='${title}'
+			document.title='${title}',flashvars=${JSON.stringify(params.flashvars)}
 		</script> 
                 <script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/common_combined.js.gz.js"></script>
                 <script type="text/javascript" src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/../po/goserver_js-en_US.json.gz.json"></script>
@@ -363,9 +363,8 @@ module.exports = function (req, res, url) {
     </ul>
 </li>
 </header>
-<body>
-<script>flashvars=${JSON.stringify(params.flashvars)}</script>
 
-	</body>${stuff.pages[url.pathname] || ''}`);
+	<body style="margin:0px">${toObjectString(attrs, params)
+		}</body>${stuff.pages[url.pathname] || ''}`);
 	return true;
 }

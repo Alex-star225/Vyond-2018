@@ -362,7 +362,7 @@ module.exports = function (req, res, url) {
         <li><a class="gtm-logout" href="https://ga.vyond.com/logoff">Log Out</a></li>
     </ul>
 </li>
-</header
+</header>
 <body>
 <script>flashvars=${JSON.stringify(params.flashvars)}</script>
 

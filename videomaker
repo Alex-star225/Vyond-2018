@@ -162,7 +162,7 @@ if (self !== top) {
     <a class="dropdown-toggle" href="https://app.vyond.com/v2/profile?_ga=2.267592910.1787275047.1622475828-1109201905.1622475828" data-toggle="dropdown" aria-expanded="false">
         <span class="hidden-sm hidden-md hidden-lg">Your Account</span>
         <div class="site-nav__profile-image">
-            <img class="portrait portrait-tiny img-circle" src="330919361.jpg" alt="">
+            <img class="portrait portrait-tiny img-circle" src="https://josephcrosmanplays532.github.io/Vyond-Legacy-Classic/330919361.jpg" alt="">
         </div><span class="dropdown-caret"></span>
     </a>
     <ul class="dropdown-menu dropdown-menu-user">

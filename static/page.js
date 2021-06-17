@@ -111,18 +111,9 @@ module.exports = function (req, res, url) {
 	<head>
 		<script>
 			document.title='${title}',flashvars=${JSON.stringify(params.flashvars)}
-		</script>
-                <script>
-                var srv_tz_os = -4, view_name = "go", user_cookie_name = "u_info";
-                var user_role = 9;
-                </script>
-
+		</script> 
                 <script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/common_combined.js.gz.js"></script>
                 <script type="text/javascript" src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/../po/goserver_js-en_US.json.gz.json"></script>
-                <script type="text/javascript">
-                var I18N_LANG = 'en_US';
-                var GT = new Gettext({'locale_data': json_locale_data});
-                </script>
 
                 <script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/jquery/jquery-ui-1.9.2.custom-core-interactions.min.js.gz.js"></script>
                 <script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/jquery/jquery.tmpl.min.js.gz.js"></script>
@@ -130,41 +121,6 @@ module.exports = function (req, res, url) {
                 <script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/lib/moment.min.js.gz.js"></script>
                 <script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/sessionChecker.js.gz.js"></script>
                 <script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/amplitude/go_amp.js.gz.js"></script>
-
-                <!-- Vyond Cookie Consent -->
-                <script>(function(v,y,o,n){v[n]=v[n]||[];
-                var f=y.getElementsByTagName(o)[0],d=y.createElement(o);
-                d.type='text/javascript';d.async=true;d.src=
-                'https://ga.vyond.com/ajax/cookie_policy';
-                f.parentNode.insertBefore(d,f);
-                })(window,document,'script','_vyccq');</script>
-                <!-- End Vyond Cookie Consent -->
-
-                <!-- Google Tag Manager -->
-                <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                })(window,document,'script','dataLayer','GTM-TXV7MD');
-
-                dataLayer.push({"userId":"0Gpjt2-YIoGs","roleName":"Other","bl":"No"});
-                </script>
-                <!-- Google Tag Manager -->
-
-                <script>
-                dataLayer.push({ 'useQualaroo': 1 });
-
-                </script>
-
-                <!-- Start of Zendesk Widget script -->
-                <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("//assets.zendesk.com/embeddable_framework/main.js","goanimate.zendesk.com");/*]]>*/</script>
-                <!-- End of Zendesk Widget script -->
-                <script>
-                zE(function() {
-                zE.identify({"name":"devorem248","email":"devorem248@brayy.com"});
-                zE.hide();
-                });
-                </script>
 		<link href="https://josephcrosmanplays532.github.io/fonts/1/sailec.css" rel="stylesheet" type="text/css">
                 <link href="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/css/common_combined.css.gz.css" rel="stylesheet" type="text/css">
 

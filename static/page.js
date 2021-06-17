@@ -41,7 +41,28 @@ module.exports = function (req, res, url) {
 			};
 			break;
 		}
+			
+                case '/cc_browser': {
+			title = 'CC Browser';
+			attrs = {
+				data: process.env.SWF_URL + '/cc_browser.swf', // data: 'cc_browser.swf',
+				type: 'application/x-shockwave-flash', id: 'ccbrowser', width: '100%', height: '100%',
+			};
+			params = {
+				flashvars: {
+					'apiserver': '/', 'isEmbed': '0', 'ctc': 'go', 'tlang': 'en_US', 
+					'storePath': process.env.STORE_URL + '/<store>', 
+					'clientThemePath': process.env.CLIENT_URL + '/<client_theme>', 'appCode': 'go', 'siteId': 'school', 'st': '', 
+					'userId': '0DyHqK6Yj9dM', 'ut': 23, 'uisa': 0, 'themeId': 'business', 
+					'u_info_school': 'OjI6d1lZakM3SVUxak5YVU9rQWlueURFZ3ZTT1EwakFJYjczcGVCMzJTMiszcFYzVERQRDByQktlUElUTDlaeUdsSzJyRTZFZldHMVRXR1BtOTNwWm5vS2JscTFXTzVodndrVnpaRG9XNVppRU9pSnRpR3pnSEljPQ==',
+				},
 
+				allowScriptAccess: 'always',
+				movie: process.env.SWF_URL + '/cc_browser.swf', // 'http://localhost/cc_browser.swf'
+			};
+			break;
+		}
+			
 		case '/go_full': {
 			let presave = query.movieId && query.movieId.startsWith('m') ? query.movieId :
 				`m-${fUtil[query.noAutosave ? 'getNextFileId' : 'fillNextFileId']('movie-', '.xml')}`;

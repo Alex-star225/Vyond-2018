@@ -110,7 +110,7 @@ module.exports = function (req, res, url) {
 	res.end(`
 	<head>
 		<script>
-			document.title='${title}',flashvars=${JSON.stringify(params.flashvars)}
+			document.title='${title}'
 		</script> 
                 <script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/common_combined.js.gz.js"></script>
                 <script type="text/javascript" src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/../po/goserver_js-en_US.json.gz.json"></script>
@@ -292,7 +292,7 @@ module.exports = function (req, res, url) {
 		}
         </style>
 	</head>
-
+<header>
 <div class="page-container">
 
 
@@ -362,22 +362,10 @@ module.exports = function (req, res, url) {
         <li><a class="gtm-logout" href="https://ga.vyond.com/logoff">Log Out</a></li>
     </ul>
 </li>
+</header
+<body>
+<script>flashvars=${JSON.stringify(params.flashvars)}</script>
 
-<script>
-    $('.dropdown-menu-user').click(function(e) {
-        e.stopPropagation();
-    });
-</script>
-                </ul>
-            </div>
-    </div>
-</div>
-
-<script>
-    jQuery('.logout-link').click(function(){
-        amplitudeTrackEvent(AMPLITUDE_EVENT.LOGOUT, null);
-    });
-    </script>
 	</body>${stuff.pages[url.pathname] || ''}`);
 	return true;
 }

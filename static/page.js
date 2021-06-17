@@ -43,7 +43,7 @@ module.exports = function (req, res, url) {
 			break;
 		}
 			
-                case '/charactercreator': {
+                case '/charactercreator/': {
 			title = 'CC Browser';
 			attrs = {
 				data: process.env.SWF_URL + '/cc_browser.swf', // data: 'cc_browser.swf',
@@ -64,7 +64,7 @@ module.exports = function (req, res, url) {
 			break;
 		}
 			
-		case '/go_full': {
+		case '/videomaker/full/': {
 			let presave = query.movieId && query.movieId.startsWith('m') ? query.movieId :
 				`m-${fUtil[query.noAutosave ? 'getNextFileId' : 'fillNextFileId']('movie-', '.xml')}`;
 			title = 'Video Editor';
@@ -86,7 +86,7 @@ module.exports = function (req, res, url) {
 			break;
 		}
 
-		case '/player': {
+		case '/videos/': {
 			title = 'Player';
 			attrs = {
 				data: process.env.SWF_URL + '/player.swf',

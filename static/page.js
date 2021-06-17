@@ -23,7 +23,7 @@ module.exports = function (req, res, url) {
 
 	var attrs, params, title;
 	switch (url.pathname) {
-		case '/cc': {
+		case '/charactercreator/new_char/': {
 			title = 'Character Creator';
 			attrs = {
 				data: process.env.SWF_URL + '/cc.swf', // data: 'cc.swf',
@@ -31,18 +31,19 @@ module.exports = function (req, res, url) {
 			};
 			params = {
 				flashvars: {
-					'apiserver': '/', 'storePath': process.env.STORE_URL + '/<store>',
-					'clientThemePath': process.env.CLIENT_URL + '/<client_theme>', 'original_asset_id': query['id'] || null,
-					'themeId': 'business', 'ut': 60, 'bs': 'default', 'appCode': 'go', 'page': '', 'siteId': 'go',
-					'm_mode': 'school', 'isLogin': 'Y', 'isEmbed': 1, 'ctc': 'go', 'tlang': 'en_US',
+					'apiserver': '/', 'm_mode': 'school', 'bs': 'adam', 'isLogin': 'Y', 'isEmbed': '0', 'ctc': 'go', 'tlang': 'en_US',
+					'storePath': process.env.STORE_URL + '/<store>',
+					'clientThemePath': process.env.CLIENT_URL + '/<client_theme>', 'appCode': 'go', 'page': '', 'siteId': 'go', 
+					'userId': '00EDZP3Cu0aw', 'themeId': 'family', 'ut': 30,
 				},
+				
 				allowScriptAccess: 'always',
 				movie: process.env.SWF_URL + '/cc.swf', // 'http://localhost/cc.swf'
 			};
 			break;
 		}
 			
-                case '/cc_browser': {
+                case '/charactercreator': {
 			title = 'CC Browser';
 			attrs = {
 				data: process.env.SWF_URL + '/cc_browser.swf', // data: 'cc_browser.swf',

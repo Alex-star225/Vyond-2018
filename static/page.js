@@ -336,22 +336,6 @@ module.exports = function (req, res, url) {
 		}
         </style>
 	</head>
-	
-	<body class="en_US has-user" >
-<script type="text/javascript">
-if (self !== top) {
-            jQuery('body').hide();
-    }
-</script>
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXV7MD"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-<script type="text/javascript">
-        jQuery.extend(CCStandaloneBannerAdUI, {"actionshopSWF":"https:\/\/josephcrosmanplays532.github.io\/animation\/66453a3ba2cc5e1b\/actionshop.swf","apiserver":"\/","clientThemePath":"https:\/\/josephcrosmanplays532.github.io\/static\/55910a7cd204c37c\/<client_theme>","userId":"0Gpjt2-YIoGs"});
-</script>
 
 <div class="page-container">
 
